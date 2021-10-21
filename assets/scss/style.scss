@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  min-width: fit-content;
+}
+
+// GLOBE ANIMATION
+.globe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+// NAVIGATION
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 0 30px;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+}
+
+.nav-links li:nth-child(1) {
+  padding-left: 0;
+}
+
+.nav-links li:nth-child(3) {
+  padding-right: 0;
+}
+
+// HERO SECTION
+.hero {
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: clamp(5rem, 25vw, 10rem);
+    font-weight: 800;
+    line-height: 1;
+    color: #000000;
+    -webkit-text-stroke: 2px #ffffff;
+    text-align: center;
+  }
+  h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    font-weight: 800;
+    line-height: 1;
+    color: #00000065;
+    -webkit-text-stroke: 1px #ffffffe5;
+    text-align: center;
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
+    &:nth-child(3) {
+      margin-top: 10px;
+    }
+  }
+}
